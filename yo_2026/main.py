@@ -34,13 +34,5 @@ for i in range(2, 101):
 
 # sort items by their value
 d = sorted(d.items(), key=lambda item: item[1], reverse=True)[:5]
-
-i = 0
-# iterate through the lists
-for k, v in d:
-    i += 1
-    print(f"Pituus: {k} Alkuarvo: {v}")
-    # five have been shown
-    if i == 5:
-        break
+[print(f"Pituus: {k} Alkuarvo: {v}") for k, v in d]
 
