@@ -16,7 +16,8 @@ class Analysis:
         return eval(
             self.equation,
             {"x": x, "e": math.e, "sin": math.sin, "cos": math.cos,
-                "cbrt": cbrt, "sqrt": math.sqrt}
+             "log": math.log, "cbrt": cbrt, "sqrt": math.sqrt,
+             "lg": math.log10, "ln": math.log1p}
         )
 
 
