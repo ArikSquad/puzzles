@@ -15,7 +15,7 @@ class Analysis:
     def evaluate(self, x: float) -> float:
         return eval(
             self.equation,
-            {"x": x, "sin": math.sin, "cos": math.cos,
+            {"x": x, "e": math.e, "sin": math.sin, "cos": math.cos,
                 "cbrt": cbrt, "sqrt": math.sqrt}
         )
 
